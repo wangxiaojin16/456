@@ -1,5 +1,5 @@
 ---
-- hosts: test_240
+- hosts: all
   remote_user: sysadmin
   gather_facts: No
   become: yes
