@@ -2,8 +2,9 @@
 - hosts: 10.224.14.240
   tasks:
   - name: copy filebeat.7.7.rpm to destnestion host 
-    copy: src=/software/filebeat-7.7.0-x86_64.rpm dest=/software/ mode=0755
+  - copy: src=/software/filebeat-7.7.0-x86_64.rpm dest=/software/ mode=0755
   - name: install filebeat by rpm
-    shell: rpm -ivh "/software/filebeat-7.7.0-x86_64.rpm"
+    shell: hostname
+  - shell: rpm -ivh "/software/filebeat-7.7.0-x86_64.rpm"
   - name: starting the serive
-    service: name=filebeat state=started enabled=yes
+  - service: name=filebeat state=started enabled=yes
