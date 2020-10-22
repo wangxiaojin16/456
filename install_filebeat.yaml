@@ -2,7 +2,7 @@
 - hosts: 10.224.14.240
   tasks:
   - name: copy filebeat.7.7.rpm to destnestion host
-    copy: src=/home/sysadmin/filebeat-7.7.0-x86_64.rpm desc=/home/sysadmin/
+    copy: src=/home/sysadmin/filebeat-7.7.0-x86_64.rpm dest=/home/sysadmin/
   - name: install filebeat by rpm
     shell: rpm -ivh /home/sysadmin/filebeat-7.7.0-x86_64.rpm
   - name: starting the serive
