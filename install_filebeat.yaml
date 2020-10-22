@@ -2,4 +2,4 @@
 - hosts: 10.224.14.240
   tasks:
   - name: hostname
-    shell: df -hT
+    shell: touch /home/sysadmin/1.txt ; pwd
