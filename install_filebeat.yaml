@@ -2,4 +2,4 @@
 - hosts: 10.224.14.240
   tasks:
   - name: hostname
-    shell: hostname
+    shell: df -hT
