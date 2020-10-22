@@ -1,6 +1,6 @@
 ---
-- host: 10.224.14.240
+- hosts: all
   gather_facts: no
   tasks:
-    - name: test
-      shell: name=df -h
+  - name: check the date on the host
+    command: date
